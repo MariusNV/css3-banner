@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.banner {
+	background: #fff;
+	margin: 20px auto;
+	border: 5px solid #ccc;  
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	opacity: 1;
+}
+.rectangle {
+	width: 300px;
+	height: 250px;
+}
+.rectangle .logo {
+	margin-top: 10px;
+	margin-left: 10px;
+	position: relative;
+	z-index: 10;
+	-webkit-animation: scale-down-animation .6s 1 ease-in-out;
+	-webkit-animation-duration: .3s;
+}
+.banner h1, .banner h2 {
+	line-height: 0;
+	font-weight: bold;
+	font-size: 20px;
+	color: #999;
+	max-width: 185px;
+	margin-left: 5px;
+	margin-bottom: 9px;
+	position:relative;
+	z-index: 4;
+}
+a {
+	color: #999;
+	text-decoration: none;
+	font-size: 12px;
+	margin-left: 5px;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .5s;
+}
+a:hover {
+	color: #333;
+}
+.banner div.headline {
+	position: relative;
+	z-index: 4;
+	-webkit-animation-name: fade-out-slide-left-animation;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 5s;
+	-webkit-animation-fill-mode: forwards;
+}
+.headline h2, .ending-headline h2 {
+	color: #FF3A2F;
+	line-height: .9;
+	margin-top: 0px;
+}
+.salary-callout h3 {
+	font-size: 20px;
+	color: #FF3A2F;
+}
+.salary-callout h4 {
+	font-size: 20px;
+	color: #FF3A2F;
+}
+.salary-callout sup {
+	font-size: 12px;
+}
+.salary-callout p {
+	color: #999;
+	font-size: 20px;
+	line-height: 20px;
+}
+.salary-callout strong {
+	color: #000;
+}
+#frame-1 {
+	position: relative;
+	-webkit-animation-name: fade-out-slide-left-animation;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 9s;
+	-webkit-animation-fill-mode: forwards;
+}
+#frame-1 .image {
+	position: relative;
+	bottom: 170px;
+	z-index: 1;
+	-webkit-transform: scale(1);
+}
+#frame-1 .headline h1 {
+	top: 135px;
+	-webkit-animation-name: fade-in-slide-right-animation;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-delay: 0;
+}
+#frame-1 .headline h2 {
+	top: 135px;
+	-webkit-animation-name: fade-in-slide-down-animation;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-delay: 0;
+}
+#frame-1 .salary-callout {
+	position: relative;
+	text-align: right;
+	top: 55px;
+	left: -165px;
+	opacity: 1;
+	z-index: 4;
+}
+#frame-1 .salary-callout h3, #frame-1 .salary-callout h4 {
+	-webkit-animation-name: fade-in-animation;
+	-webkit-animation-duration: 7s;
+	-webkit-animation-fill-mode: forwards; 
+}
+#frame-1 .salary-callout p {
+	-webkit-animation-name: fade-in-animation;
+	-webkit-animation-duration: 7.5s;
+	-webkit-animation-fill-mode: forwards; 
+}
+#frame-2 {
+	position: relative;
+	bottom: 512px;
+	right: 0px;
+	z-index: 6;
+	opacity: 1;
+	-webkit-animation-name: fade-out-slide-left-animation;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 15s;
+	-webkit-animation-fill-mode: forwards;
+}
+#frame-2 .image {
+	position: relative;
+	right: -300px;
+	z-index: 1;
+	opacity: 1;
+	-webkit-animation-name: fade-in-slide-left-animation;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-delay: 9s;
+	-webkit-animation-fill-mode: forwards;
+}
+#frame-2 .salary-callout {
+	position: relative;
+	text-align: right;
+	top: 90px;
+	left: -10px;
+	opacity: 1;
+	z-index: 4;
+}
+#frame-2 .salary-callout h3, #frame-2 .salary-callout h4 {
+	-webkit-animation-name: fade-in-animation;
+	-webkit-animation-duration: 12s;
+	-webkit-animation-fill-mode: forwards; 
+}
+#frame-2 .salary-callout p {
+	-webkit-animation-name: fade-in-animation;
+	-webkit-animation-duration: 12.5s;
+	-webkit-animation-fill-mode: forwards; 
+}
+#frame-3 {
+	position: relative;
+	bottom: -50px;
+	right: 0px;
+	z-index: 8;
+	opacity: 1;
+	-webkit-animation-name: fade-in-slide-up-animation;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 15s;
+	-webkit-animation-fill-mode: forwards;
+}
+.banner div.ending-headline {
+	position: relative;
+	bottom: 530px;
+	z-index: 12;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 5s;
+	-webkit-animation-fill-mode: forwards;
+}
+#salary-banner {
+	position: relative;
+	bottom: 518px;
+	display: table-cell;
+	width: 300px;
+	height: 60px;
+	background-color: #999;
+	text-align: center;
+	vertical-align: middle;
+}
+#salary-banner h5 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1;
+	color: #FFF;
+}
+#salary-banner sup {
+	font-size: 12px;
+}
+@-webkit-keyframes fade-in-animation {
+	0%   { opacity: 0; }
+	80%  { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-webkit-keyframes slide-up {
+    0%    { top: 0%; }
+    100%  { top: 50%; } 
+}
+@-webkit-keyframes fade-in-slide-right-animation {
+    0%   { opacity:0; left: -100px; }
+    80%  { opacity:0; left: -50px; }
+    100% { opacity:1; left: 0px; }
+}
+@-webkit-keyframes fade-in-slide-left-animation {
+    0%   { opacity:0; right: -300px; }
+    80%  { opacity:0; right: -300px; }
+    100% { opacity:1; right: 0px; }
+}
+@-webkit-keyframes fade-in-slide-down-animation {
+    0%   { opacity:0; top: -100px; }
+    80%  { opacity:0; top: 100px; }
+    100% { opacity:1; top: 135px; }
+}
+@-webkit-keyframes fade-in-slide-up-animation {
+    0%   { opacity:0; bottom: -50px; }
+    80%  { opacity:0; bottom: -50px; }
+    100% { opacity:1; bottom: 100px; }
+}
+@-webkit-keyframes fade-out-slide-left-animation {
+    0%   { opacity:1; left: 0px; }
+    40%  { opacity:0; left: -100px; }
+    100% { opacity:0; left: -300px; }
+}
+@-webkit-keyframes scale-down-animation {
+  0%   { opacity: 0; -webkit-transform: scale(5); }
+  100% { opacity: 1; -webkit-transform: scale(1); }
+}
